@@ -4,7 +4,7 @@ langchain-community
 langchain-text-splitters
 chromadb
 sentence-transformers
-pymupdf==1.24.0
+pymupdf
 groq
 python-dotenv
 google-generativeai
