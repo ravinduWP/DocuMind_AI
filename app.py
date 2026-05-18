@@ -4,6 +4,11 @@ from src.vector_store import load_embedding, build_vectorstore, search
 
 from src.chatbot import ask_gemini
 
+st.set_page_config(
+    page_title="DocuMind AI",
+    page_icon="📄"
+)
+
 st.markdown("""
     <h1 style='text-align: center;'>📄 DocuMind AI</h1>
     <p style='text-align: center; color: gray;'>
