@@ -2,7 +2,7 @@
 
 An AI-powered document chatbot that lets you upload any PDF and ask questions about it in natural language. Built with a RAG (Retrieval-Augmented Generation) pipeline.
 
-🔗 **Live Demo:** [doc-umind-ai.streamlit.app](https://doc-umind-ai.streamlit.app)
+🔗 **Live Demo:** [doc-umind-ai.streamlit.app](https://sannasa.streamlit.app/)
 
 ---
 
