@@ -31,7 +31,6 @@ with st.sidebar:
     - 📚 Multiple PDF support
     - 🌐 Website URL ingestion
     - 📊 Document summarization
-    - 🌍 Multi-language support
     """)
     
     st.markdown("---")
