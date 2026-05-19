@@ -5,12 +5,12 @@ from src.vector_store import load_embedding, build_vectorstore, search
 from src.chatbot import ask_gemini
 
 st.set_page_config(
-    page_title="DocuMind AI",
+    page_title="Sannasa AI",
     page_icon="📄"
 )
 
 st.markdown("""
-    <h1 style='text-align: center;'>📄 DocuMind AI</h1>
+    <h1 style='text-align: center;'>📄 Sannasa AI</h1>
     <p style='text-align: center; color: gray;'>
         Upload any PDF and chat with it instantly using AI.
         Powered by LLaMA 3 + Semantic Search.

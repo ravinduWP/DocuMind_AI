@@ -1,4 +1,4 @@
-# 📄 DocuMind AI
+# 📄 Sannasa AI
 
 An AI-powered document chatbot that lets you upload any PDF and ask questions about it in natural language. Built with a RAG (Retrieval-Augmented Generation) pipeline.
 
@@ -33,8 +33,8 @@ An AI-powered document chatbot that lets you upload any PDF and ask questions ab
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/ravinduWP/DocuMind_AI.git
-cd DocuMind_AI
+git clone https://github.com/ravinduWP/Sannasa_AI.git
+cd Sannasa_AI
 ```
 
 **2. Create virtual environment**
