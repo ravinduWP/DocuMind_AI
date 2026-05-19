@@ -51,14 +51,19 @@ with st.sidebar:
 
 #after process of file upload
 if uploaded_file:
-    if "current_pdf" not in st.session_state or st.session_state.current_pdf != uploaded_file.name:
+    file_bytes = uploaded_file.read()
+    file_hash = hash(file_bytes)
+    
+    if "current_pdf_hash" not in st.session_state or st.session_state.current_pdf_hash != file_hash:
         with st.spinner("Processing your PDF..."):
-            text = extract_text(uploaded_file)
+            import io
+            text = extract_text(io.BytesIO(file_bytes))
             chunks = split_into_chunks(text)
             embeddings = load_embedding()
             vectorstore = build_vectorstore(chunks, embeddings)
             st.session_state.vectorstore = vectorstore
             st.session_state.history = []
+            st.session_state.current_pdf_hash = file_hash
             st.session_state.current_pdf = uploaded_file.name
     st.success("Ready! Ask me anything about your document.")
 
